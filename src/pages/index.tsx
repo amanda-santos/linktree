@@ -1,3 +1,9 @@
+import { Container } from "../styles/pages/home";
+
 export default function Home() {
-  return <p>Hello world</p>;
+  return (
+    <Container>
+      <h1>Hello world</h1>
+    </Container>
+  );
 }
