@@ -4,6 +4,8 @@ export const Container = styled.main`
   height: 100vh;
   width: 100vw;
 
+  padding: 2.4rem;
+
   background-image: url("/assets/background-mobile-dark.png");
   background-repeat: no-repeat;
   background-size: cover;

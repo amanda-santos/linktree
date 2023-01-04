@@ -1,5 +1,5 @@
-import { Avatar } from "../components";
-import { Container } from "../styles/pages/home";
+import { Avatar, Anchor } from "../components";
+import { Container, LinksContainer } from "../styles/pages/home";
 
 export default function Home() {
   return (
@@ -12,6 +12,24 @@ export default function Home() {
       />
 
       <span>@amanda-santos</span>
+
+      <LinksContainer>
+        <Anchor href="https://github.com/amanda-santos" target="_blank">
+          Access my portfolio
+        </Anchor>
+
+        <Anchor href="https://github.com/amanda-santos" target="_blank">
+          Download my ebook
+        </Anchor>
+
+        <Anchor href="https://github.com/amanda-santos" target="_blank">
+          Watch my latest video
+        </Anchor>
+
+        <Anchor href="https://github.com/amanda-santos" target="_blank">
+          See my setup
+        </Anchor>
+      </LinksContainer>
     </Container>
   );
 }
