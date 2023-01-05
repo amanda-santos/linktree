@@ -1,7 +1,15 @@
+import { FaGithub, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { useTheme } from "styled-components";
 import { Avatar, Anchor } from "../components";
-import { Container, LinksContainer } from "../styles/pages/home";
+import {
+  Container,
+  LinksContainer,
+  SocialLinksContainer,
+} from "../styles/pages/home";
 
 export default function Home() {
+  const { white } = useTheme();
+
   return (
     <Container>
       <Avatar
@@ -30,6 +38,21 @@ export default function Home() {
           See my setup
         </Anchor>
       </LinksContainer>
+
+      <SocialLinksContainer>
+        <a href="#">
+          <FaGithub size={32} color={white} />
+        </a>
+        <a href="#">
+          <FaInstagram size={32} color={white} />
+        </a>
+        <a href="#">
+          <FaYoutube size={32} color={white} />
+        </a>
+        <a href="#">
+          <FaLinkedin size={32} color={white} />
+        </a>
+      </SocialLinksContainer>
     </Container>
   );
 }
