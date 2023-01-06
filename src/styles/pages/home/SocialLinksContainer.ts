@@ -9,7 +9,7 @@ export const SocialLinksContainer = styled.div`
   gap: 1.6rem;
 
   width: 100%;
-  margin-top: 6.4rem;
+  margin: 6.4rem 0;
 
   a:hover {
     filter: brightness(0.8);

@@ -3,6 +3,7 @@ import { useTheme } from "styled-components";
 import { Avatar, Anchor } from "../components";
 import {
   Container,
+  FooterInformation,
   LinksContainer,
   SocialLinksContainer,
 } from "../styles/pages/home";
@@ -53,6 +54,11 @@ export default function Home() {
           <FaLinkedin size={32} color={white} />
         </a>
       </SocialLinksContainer>
+
+      <FooterInformation>
+        Made with 💜 by{" "}
+        <a href="https://github.com/amanda-santos">Amanda Santos</a>
+      </FooterInformation>
     </Container>
   );
 }
