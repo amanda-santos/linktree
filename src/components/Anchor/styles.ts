@@ -6,9 +6,9 @@ export const Anchor = styled.a`
 
   padding: 1.6rem 2.4rem;
 
-  color: ${({ theme }) => theme["white"]};
-  background: ${({ theme }) => theme["surface"]};
-  border: 1px solid ${({ theme }) => theme["white"]};
+  color: ${({ theme }) => theme.colors.text};
+  background: ${({ theme }) => theme.colors.surface};
+  border: 1px solid ${({ theme }) => theme.colors.text};
   border-radius: 8px;
 
   backdrop-filter: blur(4px);

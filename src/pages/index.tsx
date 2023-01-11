@@ -1,6 +1,7 @@
 import { FaGithub, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { useTheme } from "styled-components";
-import { Avatar, Anchor } from "../components";
+
+import { Avatar, Anchor, ThemeSwitch } from "../components";
 import {
   Container,
   FooterInformation,
@@ -9,7 +10,7 @@ import {
 } from "../styles/pages/home";
 
 export default function Home() {
-  const { white } = useTheme();
+  const { colors } = useTheme();
 
   return (
     <Container>
@@ -21,6 +22,8 @@ export default function Home() {
       />
 
       <span>@amanda-santos</span>
+
+      <ThemeSwitch />
 
       <LinksContainer>
         <Anchor href="https://github.com/amanda-santos" target="_blank">
@@ -42,16 +45,16 @@ export default function Home() {
 
       <SocialLinksContainer>
         <a href="#">
-          <FaGithub size={32} color={white} />
+          <FaGithub size={32} color={colors.text} />
         </a>
         <a href="#">
-          <FaInstagram size={32} color={white} />
+          <FaInstagram size={32} color={colors.text} />
         </a>
         <a href="#">
-          <FaYoutube size={32} color={white} />
+          <FaYoutube size={32} color={colors.text} />
         </a>
         <a href="#">
-          <FaLinkedin size={32} color={white} />
+          <FaLinkedin size={32} color={colors.text} />
         </a>
       </SocialLinksContainer>
 

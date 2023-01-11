@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 
   :focus {
     outline: none;
-    box-shadow: 0 0 0 2px ${({ theme }) => theme["white"]};
+    box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.text};
   }
 
   html {
@@ -17,13 +17,10 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    color: ${({ theme }) => theme["white"]};
-    -webkit-font-smoothing: antialiased;
-  }
-
-  body {
     font-family: 'Inter', sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
+    color: ${({ theme }) => theme.colors.text};
+    -webkit-font-smoothing: antialiased;
   }
 `;

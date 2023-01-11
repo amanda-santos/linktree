@@ -6,7 +6,7 @@ export const Container = styled.main`
 
   padding: 2.4rem;
 
-  background-image: url("/assets/background-mobile-dark.png");
+  background-image: url(${({ theme }) => theme.images["bg-mobile"]});
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -17,5 +17,10 @@ export const Container = styled.main`
 
   span {
     margin-top: 0.8rem;
+  }
+
+  /* media queries */
+  @media (min-width: 700px) {
+    background-image: url(${({ theme }) => theme.images["bg-desktop"]});
   }
 `;

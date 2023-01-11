@@ -6,5 +6,5 @@ export const AvatarImg = styled(Image)`
   height: 11.2rem;
 
   border-radius: 100%;
-  border: 0.1rem solid ${({ theme }) => theme["white"]};
+  border: 0.1rem solid ${({ theme }) => theme.colors.text};
 `;
