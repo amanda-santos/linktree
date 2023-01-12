@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+  🔗 Linktree
+  <hr />
+  <img src="assets/cover.png" alt="" />
+</h1>
 
-## Getting Started
+<p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/amanda-santos/linktree">
 
-First, run the development server:
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/amanda-santos/linktree">
+
+  <a href="https://github.com/amanda-santos/linktree/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/amanda-santos/linktree">
+  </a>
+
+  <a href="https://github.com/amanda-santos/linktree/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/amanda-santos/linktree">
+  </a>
+</p>
+
+<p align="center">
+  <a href="#-about-the-project">About the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-preview">Preview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-getting-started">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-how-to-contribute">How to contribute</a>&nbsp;&nbsp;&nbsp;
+</p>
+
+## 📝 About the project
+
+<p>This is a link tree project built for learning purposes. Available in English 🇬🇧. 
+<br />
+Developed based on the DevLinks course by <a href="https://rocketseat.com.br/">Rocketseat</a>. 🚀
+</p>
+
+## 🎨 Layout
+
+<p>
+  Click <a href="https://www.figma.com/file/gRwjotKJP0SnYwTKmDDFC3/DevLinks-(Community)?node-id=10%3A620&t=Na6PlhDkASoUdg9a-1">here</a> to check the layout on Figma.
+</p>
+
+## 👩🏻‍💻 Technologies
+
+Technologies used to develop this project:
+
+- Next.js
+- React
+- TypeScript
+- Styled Components
+- React Icons
+
+## 🖥 Preview
+
+
+Click <a href="https://linktree-amanda-santos.vercel.app/">here</a> to see it live. 📺
+
+## ⌨ Getting started
+
+- Run `npm install` to install the dependencies
+- Open the application with `npm run dev`
+
+## 🤔 How to contribute
+
+**Make a fork of this repository**
 
 ```bash
-npm run dev
-# or
-yarn dev
+# Fork using GitHub official command line
+# If you don't have the GitHub CLI, use the web site to do that.
+
+$ gh repo fork amanda-santos/linktree
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Follow the steps below**
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+# Clone your fork
+$ git clone your-fork-url && cd linktree
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+# Create a branch with your feature
+$ git checkout -b my-feature
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# Make the commit with your changes
+$ git commit -m 'feat: My new feature'
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Send the code to your remote branch
+$ git push origin my-feature
+```
 
-## Learn More
+After your pull request is merged, you can delete your branch.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Made with 💜 by Amanda Santos
