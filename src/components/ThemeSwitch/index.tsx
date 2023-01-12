@@ -6,7 +6,7 @@ export const ThemeSwitch = () => {
   const { theme, toggleTheme } = useThemeContext();
 
   return (
-    <Switch isDarkTheme={theme === "dark"}>
+    <Switch $isDarkTheme={theme === "dark"}>
       <button onClick={toggleTheme}>{""}</button>
       <span></span>
     </Switch>

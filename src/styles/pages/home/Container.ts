@@ -6,9 +6,8 @@ export const Container = styled.main`
 
   padding: 2.4rem;
 
-  background-image: url(${({ theme }) => theme.images["bg-mobile"]});
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url(${({ theme }) => theme.images["bg-mobile"]}) no-repeat top
+    center/cover;
 
   display: flex;
   flex-direction: column;
@@ -16,10 +15,9 @@ export const Container = styled.main`
   justify-content: center;
 
   span {
-    margin-top: 0.8rem;
+    margin-top: 1.6rem;
   }
 
-  /* media queries */
   @media (min-width: 700px) {
     background-image: url(${({ theme }) => theme.images["bg-desktop"]});
   }

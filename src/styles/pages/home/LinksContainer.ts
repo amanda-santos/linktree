@@ -9,5 +9,4 @@ export const LinksContainer = styled.div`
   gap: 1.6rem;
 
   width: 100%;
-  margin-top: 6.4rem;
 `;

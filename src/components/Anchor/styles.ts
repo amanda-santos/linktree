@@ -16,4 +16,16 @@ export const Anchor = styled.a`
 
   text-align: center;
   text-decoration: none;
+  font-weight: 500;
+
+  transition: background 0.2s;
+
+  &:hover {
+    background: ${({ theme }) => theme.colors["surface-hover"]};
+    border: 1.5px solid ${({ theme }) => theme.colors.text};
+  }
+
+  @media (min-width: 700px) {
+    width: 48rem;
+  }
 `;
