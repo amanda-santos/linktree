@@ -24,6 +24,7 @@ export default function Home() {
           alt="Amanda Santos"
           width={112}
           height={112}
+          priority
         />
 
         <span>@amanda-santos</span>

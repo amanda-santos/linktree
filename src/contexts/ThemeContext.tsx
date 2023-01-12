@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useState } from "react";
+import { createContext, ReactNode, useEffect, useState } from "react";
 import { ThemeProvider } from "styled-components";
 
 import { defaultTheme } from "../styles/themes/default";
@@ -18,24 +18,20 @@ type ThemeContextProviderProps = {
 };
 
 export function ThemeContextProvider({ children }: ThemeContextProviderProps) {
-  const isClientSide = () => typeof window !== "undefined";
-
-  const [theme, setTheme] = useState<ThemeType>(() => {
-    const localStorageTheme =
-      isClientSide() && localStorage.getItem("@linktree:theme-state-1.0.0");
-
-    const theme = localStorageTheme ? localStorageTheme : "dark";
-
-    return theme as ThemeType;
-  });
+  const [theme, setTheme] = useState<ThemeType>("dark");
 
   const toggleTheme = () => {
     const newTheme = theme === "dark" ? "light" : "dark";
 
     setTheme(newTheme);
-    isClientSide() &&
-      localStorage?.setItem("@linktree:theme-state-1.0.0", newTheme);
+    localStorage.setItem("@linktree:theme-state-1.0.0", newTheme);
   };
+
+  useEffect(() => {
+    const currentTheme =
+      localStorage.getItem("@linktree:theme-state-1.0.0") ?? "dark";
+    setTheme(currentTheme as ThemeType);
+  }, []);
 
   return (
     <ThemeContext.Provider
