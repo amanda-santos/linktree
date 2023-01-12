@@ -1,6 +1,5 @@
 <h1 align="center">
   🔗 Linktree
-  <hr />
   <img src="assets/cover.png" alt="" />
 </h1>
 
@@ -52,6 +51,9 @@ Technologies used to develop this project:
 
 ## 🖥 Preview
 
+https://user-images.githubusercontent.com/49074930/212193611-a7464028-5217-47d1-8f17-b91799e077ac.mp4
+
+https://user-images.githubusercontent.com/49074930/212193622-1d7929bc-c0d7-43c5-97c3-be86c47e3383.mp4
 
 Click <a href="https://linktree-amanda-santos.vercel.app/">here</a> to see it live. 📺
 
