@@ -32,19 +32,35 @@ export default function Home() {
         <ThemeSwitch />
 
         <LinksContainer>
-          <Anchor href="https://github.com/amanda-santos" target="_blank">
+          <Anchor
+            href="https://github.com/amanda-santos"
+            target="_blank"
+            rel="noreferrer"
+          >
             Access my portfolio
           </Anchor>
 
-          <Anchor href="https://github.com/amanda-santos" target="_blank">
+          <Anchor
+            href="https://github.com/amanda-santos"
+            target="_blank"
+            rel="noreferrer"
+          >
             Download my ebook
           </Anchor>
 
-          <Anchor href="https://github.com/amanda-santos" target="_blank">
+          <Anchor
+            href="https://github.com/amanda-santos"
+            target="_blank"
+            rel="noreferrer"
+          >
             Watch my latest video
           </Anchor>
 
-          <Anchor href="https://github.com/amanda-santos" target="_blank">
+          <Anchor
+            href="https://github.com/amanda-santos"
+            target="_blank"
+            rel="noreferrer"
+          >
             See my setup
           </Anchor>
         </LinksContainer>
@@ -66,7 +82,13 @@ export default function Home() {
 
         <FooterInformation>
           Made with 💜 by{" "}
-          <a href="https://github.com/amanda-santos">Amanda Santos</a>
+          <a
+            href="https://github.com/amanda-santos"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Amanda Santos
+          </a>
         </FooterInformation>
       </Container>
     </>
